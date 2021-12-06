@@ -10,13 +10,38 @@ header{
 
 main{
     display: inline-grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     grid-template-rows: 30.5vh 30.5vh 31vh;
+    width: 100%;
 }
 
-main .productImg{
-    width: 20vw;
-    height: 20vw;
+main img{
+    width: 10vw;
+    height: auto;
+}
+
+main .productGrid{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25% 75%;
+    width: 100%;
+    text-align: center;
+}
+
+main .productGrid h3{
+    grid-column: 1 /span 3;
+}
+
+main #boven{
+    grid-row: 1;
+}
+
+main #midden{
+    grid-row: 2;
+}
+
+main #onder{
+    grid-row: 3;
 }
 
 main .productLinks{
@@ -31,19 +56,3 @@ main .productRechts{
     grid-column: 3;
 }
 
-main img{
-    width: 100%;
-    height: auto;
-}
-
-main #top{
-    grid-row: 1;
-}
-
-main #midden{
-    grid-row: 2;
-}
-
-main #onder{
-    grid-row: 3;
-}
