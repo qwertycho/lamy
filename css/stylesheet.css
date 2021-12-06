@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+header{
+    height: 8vh;
+    width: 100%;
+    text-align: center;
+}
+
+main{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30.5vh 30.5vh 31vh;
+}
+
+main .productImg{
+    width: 20vw;
+    height: 20vw;
+}
+
+main .productLinks{
+    grid-column: 1;
+}
+
+main .productMidden{
+    grid-column: 2;
+}
+
+main .productRechts{
+    grid-column: 3;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+}
+
+main #top{
+    grid-row: 1;
+}
+
+main #midden{
+    grid-row: 2;
+}
+
+main #onder{
+    grid-row: 3;
+}
