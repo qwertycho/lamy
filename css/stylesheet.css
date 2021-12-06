@@ -1,5 +1,9 @@
 body{
     margin: 0;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 8vh auto;
 }
 
 header{
@@ -8,6 +12,47 @@ header{
     text-align: center;
 }
 
+header img{
+    margin-top: 1.5vh;
+    height: 5vh;
+}
+
+/* menu */
+nav{
+    width: 125px;
+    position: absolute;
+    margin-left: 1%;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 5px;
+}
+
+nav ul{
+    display: none;
+    text-align: left;
+    line-height: 2em;
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover{
+    font-size: 110%;
+}
+
+
+
+nav:hover ul{
+    display: block;
+}
+
+/* einde menu */
+/* grid */
 main{
     display: inline-grid;
     grid-template-columns: auto;
@@ -55,4 +100,6 @@ main .productMidden{
 main .productRechts{
     grid-column: 3;
 }
+
+/* einde grid */
 
