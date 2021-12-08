@@ -57,42 +57,7 @@ header img{
     display: none;
 }
 
-/* menu */
-/* nav{
-    width: 125px;
-    position: absolute;
-    margin-left: 1%;
-    text-align: center;
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    padding: 5px;
-    background-color: white;
-}
 
-nav ul{
-    display: none;
-    text-align: left;
-    line-height: 2em;
-    list-style: none;
-}
-
-nav ul a{
-    text-decoration: none;
-    color: black;
-}
-
-nav ul a:hover{
-    font-size: 110%;
-}
-
-
-
-nav:hover ul{
-    display: block;
-} */
-
-/* einde menu */
 /* grid */
 main{
     display: inline-grid;
@@ -166,4 +131,52 @@ footer{
 footer p{
     float: right;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 750px) {
+
+/* menu */
+.navBalk{
+    display: none;
+}
+.navButton{
+    display: block;
+}
+
+nav{
+    width: 125px;
+    position: absolute;
+    margin-left: 1%;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 5px;
+    background-color: white;
+}
+
+nav ul{
+    display: none;
+    text-align: left;
+    line-height: 2em;
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover{
+    font-size: 110%;
+}
+
+
+
+nav:hover ul{
+    display: block;
+}
+
+/* einde menu */
+
 }
