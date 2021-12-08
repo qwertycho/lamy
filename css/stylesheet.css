@@ -3,13 +3,14 @@ body{
 
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 8vh auto;
+    grid-template-rows: 8vh 4vh auto 8vh;
 }
 
 header{
     height: 8vh;
     width: 100%;
     text-align: center;
+    grid-row: 1;
 }
 
 header img{
@@ -17,8 +18,47 @@ header img{
     height: 5vh;
 }
 
+.navBalk{
+    width: calc(100% - 10px);
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 0;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    padding: 5px;
+    background-color: white;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+}
+
+.navBalk ul{
+    display: inline;
+    line-height: 2em;
+    list-style: none;
+    width: 100%;
+}
+
+.navBalk ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.navBalk ul a:hover{
+    font-size: 110%;
+}
+
+.navBalk li{
+    display: inline;
+}
+
+.navButton{
+    display: none;
+}
+
 /* menu */
-nav{
+/* nav{
     width: 125px;
     position: absolute;
     margin-left: 1%;
@@ -27,6 +67,7 @@ nav{
     border-color: black;
     border-width: 3px;
     padding: 5px;
+    background-color: white;
 }
 
 nav ul{
@@ -49,7 +90,7 @@ nav ul a:hover{
 
 nav:hover ul{
     display: block;
-}
+} */
 
 /* einde menu */
 /* grid */
@@ -58,10 +99,16 @@ main{
     grid-template-columns: auto;
     grid-template-rows: 30.5vh 30.5vh 31vh;
     width: 100%;
+    grid-row: 3;
 }
 
 main img{
     width: 10vw;
+    height: auto;
+}
+
+main img:hover{
+    width: 10.5vw;
     height: auto;
 }
 
@@ -79,14 +126,23 @@ main .productGrid h3{
 
 main #boven{
     grid-row: 1;
+    background-color: var(--grijsAchtergrond);
 }
 
 main #midden{
     grid-row: 2;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+
 }
 
 main #onder{
     grid-row: 3;
+    background-color: var(--grijsAchtergrond);
 }
 
 main .productLinks{
@@ -103,3 +159,11 @@ main .productRechts{
 
 /* einde grid */
 
+footer{
+    grid-row: 4;
+    background-color: white;
+}
+footer p{
+    float: right;
+    margin-right: 10px;
+}
