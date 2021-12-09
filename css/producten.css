@@ -1,0 +1,29 @@
+main{
+    grid-template-columns: 20vw auto 20vw;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+}
+
+main img{
+    width: 20vw;
+}
+
+main img:hover{
+    width: 20vw;
+}
+
+main .product{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.product .tekst{
+    grid-column: 2;
+    margin-left: 10px;
+}
+
+.product button{
+    bottom: 0;
+}
