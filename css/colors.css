@@ -1,5 +1,6 @@
 :root{
     --grijsAchtergrond: hsl(15, 35%, 91%);
+    --grijs: hsl(0, 0%, 85%);
     --hoofdKleur: hsl(203, 48%, 44%);
-    --contrast: hsl(17, 87%, 54%);
+    --contrast: hsl(17, 91%, 63%);
 }

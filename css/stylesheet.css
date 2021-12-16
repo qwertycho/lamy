@@ -1,9 +1,23 @@
 body{
     margin: 0;
-
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 8vh 4vh auto 8vh;
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+}
+h2{
+    font-family: 'Fira Sans', sans-serif;
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+a{
+    font-family: 'Fira Sans', sans-serif;
 }
 
 header{
@@ -57,6 +71,10 @@ header img{
     display: none;
 }
 
+.navBalk .active{
+    color: var(--hoofdKleur);
+}
+
 
 /* grid */
 main{
@@ -97,12 +115,6 @@ main #boven{
 main #midden{
     grid-row: 2;
     background-color: white;
-    border-style: solid;
-    border-color: black;
-    border-width: 0;
-    border-top-width: 3px;
-    border-bottom-width: 3px;
-
 }
 
 main #onder{
@@ -167,11 +179,17 @@ nav ul a{
     color: black;
 }
 
+nav ul a.active{
+    color: var(--hoofdKleur);
+}
+
 nav ul a:hover{
     font-size: 110%;
 }
 
-
+nav:hover{
+    width: 200px;
+}
 
 nav:hover ul{
     display: block;
@@ -180,3 +198,17 @@ nav:hover ul{
 /* einde menu */
 
 }
+
+/* button */
+button{
+    background-color: var(--hoofdKleur);
+    border-radius: 10px;
+    border-color: var(--hoofdKleur);
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+button:hover{
+    cursor: pointer;
+}
+/* einde button */

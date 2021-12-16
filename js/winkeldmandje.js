@@ -29,3 +29,5 @@ function cart(e){
     console.log(localStorage.getItem("winkelmandTotaal"))
 }
 
+// todo: toegevoegd item-knop een andere kleur geven
+
