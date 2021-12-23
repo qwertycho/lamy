@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamy</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/colors.css" />
+    <link rel="stylesheet" href="../css/winkelmand.css" />
+    <link rel="icon" type="image/x-icon" href="../media/logo.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">  
+    
+
+    <script src="../js/winkeldmandje.js" defer></script>
+    <script src="../js/betalen.js" defer></script>
+
+  <body>
+    <header>
+      <img src="../media/logo.svg" />
+    </header>
+    <nav class="navBalk" id="navBalk">
+      <ul>
+        <li><a href="/index.html">Home &nbsp;</a></li>
+        <li><a href="/pages/vulpennen.html">Vulpennen &nbsp;</a></li>
+        <li><a href="/pages/inkt.html">Inkten &nbsp;</a></li>
+        <li><a href="/pages/papier.html">Papier &nbsp;</a></li>
+        <li><a href="/pages/contact.html">Contact &nbsp;</a></li>
+        <li><a href="/pages/winkelmand.html" class="active">Winkelmandje &nbsp;</a></li>
+      </ul>
+    </nav>
+    <main id="main">
+      <nav class="navButton" id="navButton">
+        <!-- onclick menu -->
+        menu
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/vulpennen.html">Vulpennen</a></li>
+          <li><a href="/pages/inkt.html">Inkten</a></li>
+          <li><a href="/pages/papier.html">Papier</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/winkelmand.html" class="active">Winkelmandje</a></li>
+        </ul>
+      </nav>
+      <article class="mandje" id="mandje">
+        <img src="../media/mandje.png">
+        <div class="tekst">
+        <h3>Uw Winkelmandje</h3>
+        <p id="mandInhoud">
+            Uw winkelmandje is leeg.
+        </p>
+        <p id="mandTotaal">€ 0</p>
+        <button class="koop" id="betaal">Betalen</button>
+        <button class="leeg" id="leeg">Leeg winkemandje</button>
+    </div> 
+    </article>
+
+    </main>
+    <div class="popup" id="popup">
+        <p>Door u te betalen: <b id="koopTotaal"></b></p>
+        <img src="../media/ideal.png" id="ideal">
+        <img src="../media/paypal.jpg" id="paypal">
+        <img src="../media/qr.gif" id="qr">
+
+    </div>
+    <footer>
+      <p>Tycho van Opstal</p>
+    </footer>
+  </body>
+</html>
