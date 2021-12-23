@@ -1,0 +1,39 @@
+main{
+    grid-template-columns: 20vw auto 20vw;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+    background-color: var(--grijsAchtergrond);
+}
+
+main article{
+    margin-top: 1.5vh;
+}
+
+main img{
+    width: 20vw;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+main img:hover{
+    width: 20vw;
+}
+
+main .over{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 80vh;
+    background-color: white;
+}
+
+main .tekst{
+    grid-column: 2;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product button{
+    bottom: 0;
+}
