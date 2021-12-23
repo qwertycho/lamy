@@ -3,7 +3,24 @@ body{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 8vh 4vh auto 8vh;
+    scrollbar-width: thin;
 }
+
+* {
+    scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+}
+
+/* body::-webkit-scrollbar {
+    width: 12px;
+  } */
 
 h1{
     font-family: 'Fira Sans', sans-serif;
