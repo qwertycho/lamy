@@ -24,7 +24,7 @@ function betaal(){
 if(localStorage.getItem("winkelmandTotaal")== null){
     leeg()
 } else{
-    document.getElementById("mandInhoud").innerHTML = localStorage.getItem("winkelmandInhoud");
+    document.getElementById("mandInhoud").innerHTML = JSON.parse( localStorage.getItem("winkelmandInhoud") );
     document.getElementById("mandTotaal").innerHTML = "€" + localStorage.getItem("winkelmandTotaal");
     document.getElementById("koopTotaal").innerHTML = "€" + localStorage.getItem("winkelmandTotaal");
 
