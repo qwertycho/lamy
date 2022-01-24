@@ -3,6 +3,8 @@ main{
     grid-template-rows: auto auto auto;
     grid-row-gap: 10px;
     background-color: var(--grijsAchtergrond);
+    background-image: url(../media/splash.png);
+    background-position: left;
 }
 
 main img{

@@ -16,22 +16,16 @@ for(let i = 0; i < buttons.length; i++ ){
     buttons[i].addEventListener("click", cart)
 }
 
-
 // zet de inhoud van winkelmandje
 if(localStorage.getItem("winkelmandTotaal") != null){
     winkelmand.inhoud = JSON.parse( localStorage.getItem("winkelmandInhoud"));
     winkelmand.totaal = parseInt(localStorage.getItem("winkelmandTotaal"));
-    console.log(localStorage.getItem("winkelmandInhoud"))
-    console.log(localStorage.getItem("winkelmandTotaal"))
 }
 
 // matcht e met de object namen
 function cart(e){
     // het eerste item word gezet anders is het null. Daarna worden items normaal toegevoegd.
     if(localStorage.getItem("winkelmandTotaal") != null){
-        console.log(localStorage.getItem("winkelmandTotaal"))
-        console.log(" plus")
-
         let item = eval(e.target.id)
         winkelmand.inhoud += item.naam
         winkelmand.totaal += item.prijs
@@ -39,17 +33,9 @@ function cart(e){
         let item = eval(e.target.id)
         winkelmand.inhoud = item.naam
         winkelmand.totaal += item.prijs
-        console.log("set")
     }
     localStorage.setItem("winkelmandInhoud", JSON.stringify(winkelmand.inhoud) )
     localStorage.setItem("winkelmandTotaal", winkelmand.totaal)
-    console.log(localStorage.getItem("winkelmandInhoud"))
-    console.log(localStorage.getItem("winkelmandTotaal"))
-
 }
 
-console.log(localStorage.getItem("winkelmandInhoud"))
-console.log(localStorage.getItem("winkelmandTotaal"))
-
 // todo: toegevoegd item-knop een andere kleur geven
-
