@@ -7,7 +7,8 @@
     <title>Lamy</title>
     <link rel="stylesheet" href="../css/stylesheet.css" />
     <link rel="stylesheet" href="../css/colors.css" />
-    <link rel="stylesheet" href="../css/winkelmand.css" />
+    <link rel="stylesheet" href="../css/voorwaarde.css" />
+
     <link rel="icon" type="image/x-icon" href="../media/logo.svg">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">  
-    
-
-    <script src="../js/winkeldmandje.js" defer></script>
-    <script src="../js/betalen.js" defer></script>
 
   <body>
     <header>
@@ -31,7 +28,7 @@
         <li><a href="/pages/inkt.html">Inkten &nbsp;</a></li>
         <li><a href="/pages/papier.html">Papier &nbsp;</a></li>
         <li><a href="/pages/contact.html">Contact &nbsp;</a></li>
-        <li><a href="/pages/winkelmand.html" class="active">Winkelmandje &nbsp;</a></li>
+        <li><a href="/pages/winkelmand.html">Winkelmandje &nbsp;</a></li>
       </ul>
     </nav>
     <main id="main">
@@ -44,30 +41,23 @@
           <li><a href="/pages/inkt.html">Inkten</a></li>
           <li><a href="/pages/papier.html">Papier</a></li>
           <li><a href="/pages/contact.html">Contact</a></li>
-          <li><a href="/pages/winkelmand.html" class="active">Winkelmandje</a></li>
+          <li><a href="/pages/winkelmand.html">Winkelmandje</a></li>
         </ul>
       </nav>
-      <article class="mandje" id="mandje">
-        <img src="../media/mandje.png">
+      <article class="over" id="over">
         <div class="tekst">
-        <h3>Uw Winkelmandje</h3>
-        <p id="mandInhoud">
-            Uw winkelmandje is leeg.
+        <h3>Algemene voorwaaden</h3>
+        <p>
+            U kunt hier onze Algemene voorwaarden downloaden. Voor meer informatie en/of vragen kunt u terecht bij 82768@glr.nl.
         </p>
-        <p id="mandTotaal">€ 0</p>
-        <button class="koop" id="betaal">Betalen</button>
-        <button class="leeg" id="leeg">Leeg winkemandje</button>
+        <a href="../media/voorwaarden.docx" target="_blank">Download voorwaarden</a>
+        <br>
+        <img src="../media/lamyhq.jpg">
     </div> 
     </article>
 
     </main>
-    <div class="popup" id="popup">
-        <p><b>Door u te betalen:</b> <b id="koopTotaal"></b></p>
-        <img src="../media/ideal.png" id="ideal">
-        <img src="../media/paypal.jpg" id="paypal">
-        <img src="../media/qr.gif" id="qr">
 
-    </div>
     <footer>
       <p>Tycho van Opstal</p>
       <p class="left"><a href="voorwaarde.html">voorwaarden</a></p>
