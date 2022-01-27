@@ -113,12 +113,12 @@ main img:hover{
 }
 
 @media screen and (min-width: 2500px) {
-    main img{
+    main .indexImg{
         width: auto;
         height: 20vh;
     }
     
-    main img:hover{
+    main .indexImg:hover{
         width: auto;
         height: 20.5vh;
     }
