@@ -112,6 +112,18 @@ main img:hover{
     height: auto;
 }
 
+@media screen and (min-width: 2500px) {
+    main img{
+        width: auto;
+        height: 20vh;
+    }
+    
+    main img:hover{
+        width: auto;
+        height: 20.5vh;
+    }
+  }
+
 main .productGrid{
     display: inline-grid;
     grid-template-columns: auto auto auto;
